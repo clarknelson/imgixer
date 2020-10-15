@@ -43,9 +43,10 @@ return [
             // Optionally specify a subfolder path to prefix generated URLs.
             'subfolder' => '', 
             
-            // The private Imgix key used to sign images. 
+            // The private Imgix token used to sign images. 
+            // Select "Secure URLs" when creating the source
             // Get this from the source details screen in Imgix.com
-            'key'   => '12345',
+            'token'   => '12345',
             
             // Define any default parameters here:
             'defaultParams' => array(

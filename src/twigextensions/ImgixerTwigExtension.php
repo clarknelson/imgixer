@@ -139,9 +139,9 @@ class ImgixerTwigExtension extends \Twig_Extension
         $builder = new UrlBuilder($this->sources[$source]['domain']);
         $builder->setUseHttps(true);
 
-        if ($signed && isset($this->sources[$source]['key']) && ! empty($this->sources[$source]['key']))
+        if ($signed && isset($this->sources[$source]['token']) && ! empty($this->sources[$source]['token']))
         {
-            $builder->setSignKey($this->sources[$source]['key']);
+            $builder->setSignKey($this->sources[$source]['token']);
         }
 
         return $builder->createURL($img, $params);

@@ -35,7 +35,7 @@ return [
 
             // The private Imgix key used to sign images.
             // Get this from the source details screen in Imgix.com
-            'key'   => '',
+            'token'   => '',
 
             // Define any default parameters here:
             'defaultParams' => []
